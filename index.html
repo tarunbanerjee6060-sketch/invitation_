@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarun & Ashmitha | Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-dark:#3a0c14;
+  --bg-maroon:#4b0f1a;
+  --gold:#e6c97a;
+  --ivory:#f5f1e8;
+  --champagne:#e9d8a6;
+  --rosegold:#d8b4a0;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg-dark),var(--bg-maroon));
+  font-family:'Playfair Display',serif;
+  text-align:center;
+}
+
+/* ---------- GLOBAL ---------- */
+section{padding:44px 18px}
+h1,h2,h3{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  letter-spacing:1px;
+}
+p{color:var(--ivory)}
+a{text-decoration:none;color:inherit}
+
+/* ---------- BUTTON ---------- */
+.btn{
+  display:inline-block;
+  padding:12px 30px;
+  border-radius:30px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  margin:20px 0;
+  transition:.4s;
+}
+.btn:hover{
+  background:var(--gold);
+  color:var(--bg-maroon);
+  transform:scale(1.05);
+}
+
+/* ---------- HERO ---------- */
+.invitation{
+  font-size:34px;
+}
+.save{
+  font-size:14px;
+  color:var(--rosegold);
+  letter-spacing:2px;
+  margin-top:6px;
+}
+
+.names{
+  font-family:'Great Vibes',cursive;
+  font-size:40px;
+  margin:28px 0;
+}
+.names a{
+  display:block;
+  color:var(--gold);
+  transition:.3s;
+}
+.names a:hover{
+  color:var(--champagne);
+  transform:scale(1.05);
+}
+
+.message{
+  max-width:340px;
+  margin:auto;
+  font-size:15px;
+  color:var(--ivory);
+}
+
+.date{
+  font-size:20px;
+  margin:20px 0;
+  color:var(--champagne);
+}
+
+/* ---------- COUNTDOWN ---------- */
+.countdown{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+.time{
+  width:70px;
+  padding:10px;
+  border-radius:12px;
+  border:1px solid var(--gold);
+  color:var(--ivory);
+}
+
+/* ---------- CARDS ---------- */
+.card{
+  border:1px solid var(--gold);
+  border-radius:18px;
+  padding:20px;
+  margin:18px 0;
+  background:rgba(255,255,255,.04);
+  transition:.4s;
+}
+.card h3{color:var(--gold)}
+.card p{color:var(--ivory)}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 28px rgba(0,0,0,.45);
+}
+
+/* ---------- MAP ---------- */
+iframe{
+  width:100%;
+  height:220px;
+  border-radius:14px;
+  border:0;
+}
+
+/* ---------- RSVP ---------- */
+input,select,textarea{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  margin:10px 0;
+  font-family:inherit;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  padding:32px 10px;
+  font-size:14px;
+  color:var(--rosegold);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section>
+  <h1 class="invitation">INVITATION</h1>
+  <div class="save">SAVE THE DATE</div>
+
+  <div class="names">
+    <a href="tarun.html">Tarun Banerjee</a>
+    &
+    <a href="ashmitha.html">Bhaskarabattla Ashmitha</a>
+  </div>
+
+  <p class="message">
+    Requesting your warm presence at the ceremony and celebration
+  </p>
+
+  <div class="date">25th February 2026</div>
+
+  <div class="countdown">
+    <div class="time"><div id="d">0</div>Days</div>
+    <div class="time"><div id="h">0</div>Hrs</div>
+    <div class="time"><div id="m">0</div>Min</div>
+    <div class="time"><div id="s">0</div>Sec</div>
+  </div>
+</section>
+
+<!-- CEREMONIES -->
+<section>
+<h2>CEREMONY DETAILS</h2>
+
+<div class="card">
+<h3>Haldi Ceremony</h3>
+<p>24 February 2026 · 1:00 PM</p>
+<p>Yaara Resorts, Tuniki Bollaram</p>
+</div>
+
+<div class="card">
+<h3>Sangeet Ceremony</h3>
+<p>24 February 2026 · 8:00 PM</p>
+<p>Yaara Resorts, Tuniki Bollaram</p>
+</div>
+
+<div class="card">
+<h3>Wedding Ceremony</h3>
+<p>25 February 2026 · 3:00 AM onwards</p>
+<p>Yaara Resorts, Tuniki Bollaram</p>
+</div>
+
+<div class="card">
+<h3>Reception</h3>
+<p>27 February 2026 · 6:00 PM onwards</p>
+<p>Hotel SVM Grand, Dairy Farm Road</p>
+</div>
+
+<a class="btn" href="note.html">A Note of Joy</a>
+</section>
+
+<!-- MAPS -->
+<section>
+<h2>Wedding Venue Direction</h2>
+<div class="card">
+<iframe src="https://maps.google.com/maps?q=17.721472,78.592972&z=15&output=embed"></iframe>
+</div>
+
+<h2>Reception Venue Direction</h2>
+<div class="card">
+<iframe src="https://maps.google.com/maps?q=Hotel%20SVM%20Grand%20Dairy%20Farm%20Road&z=15&output=embed"></iframe>
+</div>
+</section>
+
+<!-- RSVP -->
+<section>
+<h2>RSVP</h2>
+<input id="name" placeholder="Your Name">
+<select id="status">
+<option>Attending</option>
+<option>Not Attending</option>
+</select>
+<textarea id="wish" placeholder="Any best wishes to us"></textarea>
+<a class="btn" onclick="send()">Submit</a>
+</section>
+
+<footer>
+With Love<br>
+Tarun & Ashmitha | 2026
+</footer>
+
+<script>
+const target=new Date("Feb 25, 2026 00:00:00").getTime();
+setInterval(()=>{
+  const now=new Date().getTime();
+  let d=Math.max(target-now,0);
+  document.getElementById("d").innerText=Math.floor(d/86400000);
+  document.getElementById("h").innerText=Math.floor((d%86400000)/3600000);
+  document.getElementById("m").innerText=Math.floor((d%3600000)/60000);
+  document.getElementById("s").innerText=Math.floor((d%60000)/1000);
+},1000);
+
+function send(){
+  const text=`RSVP%0AName: ${name.value}%0AStatus: ${status.value}%0AWish: ${wish.value}`;
+  window.open(`https://wa.me/917799207000?text=${text}`);
+}
+</script>
+
+</body>
+</html>

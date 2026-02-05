@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Note of Joy | Tarun & Ashmitha</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cinzel:wght@500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --maroon:#4b0f1a;
+  --gold:#e6c97a;
+  --soft:#f3df9b;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(180deg,#3a0c14,#5a1322);
+  color:var(--gold);
+  font-family:'Playfair Display',serif;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.card{
+  border:1px solid var(--gold);
+  border-radius:22px;
+  padding:40px 22px;
+  max-width:380px;
+  background:rgba(255,255,255,.04);
+  animation:fadeUp 1.6s ease;
+}
+
+h1{
+  font-family:'Cinzel',serif;
+  font-size:26px;
+  margin-bottom:18px;
+}
+
+p{
+  font-size:15px;
+  line-height:1.7;
+  opacity:.95;
+}
+
+.signature{
+  margin-top:28px;
+  font-family:'Great Vibes',cursive;
+  font-size:26px;
+  color:var(--soft);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 28px;
+  border-radius:30px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  transition:.4s;
+}
+.btn:hover{
+  background:var(--gold);
+  color:#4b0f1a;
+  transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>With Warm Regards</h1>
+
+  <p>
+    With hearts full of joy and gratitude, we invite you to be a part of this
+    beautiful moment in our lives. Your presence will add warmth, blessings,
+    and happiness to the celebration, making it truly unforgettable.
+    Join us as we come together to create memories wrapped in love and smiles.
+  </p>
+
+  <div class="signature">
+    Tarun & Ashmitha
+  </div>
+
+  <a class="btn" href="index.html">Back to Invitation</a>
+</div>
+
+</body>
+</html>
